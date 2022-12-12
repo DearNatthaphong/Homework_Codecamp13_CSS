@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width 900</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+        }
+        body {
+            max-width: auto; 
+            margin: auto; 
+        }
+        main {
+            text-align :left;
+            background-color: red;
+            height: 640px;
+            display: flex;
+            flex-flow: column; /* ### */
+            justify-content: center; /* ### */
+            align-items: center; 
+        }
+        main > * {
+            border: 1px dashed lime;
+            height: 100px;
+         }
+        .main-l {
+            width: 400px; 
+        }
+        h2 {
+            font-size: 26px; 
+            padding: 0 0 20px; /* ### */
+        }
+        .main-r {
+            width: 400px;
+            height: auto;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        .main-r > * {
+            border: 1px dashed white;
+            height: auto;
+            margin: 5px;
+        }
+        ._container1 {
+            border-radius: 4px;
+            width: 396px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        ._container1 > * {
+            border: 1px dashed blue;
+            margin: 2px;
+        }
+        footer {
+            background-color: green;
+            display: flex;
+            justify-content: center;
+        }
+        .footer-c {
+            border: 1px dotted lime;
+            width: 980px;
+            padding: 0 30px; 
+        }
+        .footer-c > *{
+            border: 1px dashed white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="main-l">
+            <h2>Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</h2>
+        </div>
+        <div class="main-r">
+            <div class="_container1">
+                <div class="box1">1</div>
+                <div class="box2">2</div>
+                <div class="box3">3</div>
+                <div class="box4">4</div>
+                <div class="box5">5</div>
+                <div class="box6">6</div>
+            </div>
+            <div class="_container2">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-c">
+            <div class="foot1">Foot1</div>
+            <div class="foot2">Foot2</div>
+            <div class="foot3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eligendi voluptatem distinctio soluta quisquam, iure libero facilis modi unde perferendis consequuntur natus nulla voluptas, eius, adipisci sed temporibus. Dicta alias, laudantium vitae sequi a quae rerum voluptas, dolorem itaque provident asperiores. Dolore distinctio consequuntur optio veritatis officia omnis facilis porro?</div>
+            <div class="foot4">Foot4</div>
+        </div>
+    </footer>
+</body>
+</html>

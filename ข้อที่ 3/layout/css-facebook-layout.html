@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css facebook layout</title>
+    <style>
+          * {margin: 0; padding: 0; box-sizing: border-box;
+        }
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            max-width: 1075;
+            margin: auto; 
+        }
+        main {
+            font-size: 16px;
+            background-color: rgb(240, 242, 245);
+            height: 70vh;
+            display: flex;
+            flex-flow: row ;
+            /* justify-content: flex-start; */
+        }
+        main > * {
+            flex: 1;
+        }
+        .main-l {
+            border: 1px dashed lime;
+            flex-basis: 600px;
+            padding: 0 32px 0 0;
+            text-align: left;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+        img {
+            width: 300px;
+            padding: 30px 30px 20px 30px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        .main-r {
+            text-align: center;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+        form {
+            width: 396px;
+            background-color: white;
+            box-shadow: 0 2px 4px #ccc;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        form > * {
+            margin: 10px;
+        }
+        input[type=text] {
+            font-size: 18px;
+            width: 370px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: rgb(216, 214, 214);
+            padding: 10px;
+        }
+        .button-1 > input {
+            font-size: 22px;
+            width: 370px;
+            background-color: #2881f5;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .button-1 > input:hover {
+            background-color: #1877F2;
+        }
+        .link-1 {
+            padding: 10px;
+        }
+        .link-1 > a {
+            text-decoration: none;
+            color: #1877F2;
+        }
+        .link-1 > a:hover {
+            text-decoration: underline;
+        }
+        .line {
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+        .button-2{
+            width: fit-content;
+            background-color: rgb(66, 183, 42);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 22px;
+            padding: 10px;
+            margin: 20px;
+        }
+        .button-2:hover {
+            background-color: rgb(32, 148, 9);
+        }
+        .page {
+            padding: 20px;
+        }
+        .page > a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+        .page > a:hover {
+            text-decoration: underline;
+        }
+         footer {
+            background-color: rgba(0, 0, 0, 0);
+            height: 30vh;
+            border-bottom: gr;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="main-l">
+            <div class="_img">
+                <img src="./pic/Facebook-logo.png" alt="">
+            </div>
+            <h2>Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</h2>
+        </div>
+        <div class="main-r">
+            <div>
+                <form action="">
+                    <div>
+                        <input type="text" name="user" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ">
+                    </div>
+                    <div>
+                        <input type="text" name="user" placeholder="รหัสผ่าน">
+                    </div>
+                    <div class="button-1">
+                        <input type="button" value="เข้าสู่ระบบ">
+                    </div>
+                    <div class="link-1">
+                        <a href="#">ลืมรหัสผ่านใช่หรือไม่</a>
+                    </div>
+                    <div class="line"></div>
+                    <input class="button-2" type="button" value="สร้างบัญชีใหม่">
+                </form>
+            </div>
+            <div class="page">
+                <a href="#" style="color:black;">สร้างเพจ</a><span>  สำหรับคนดัง แบรนด์ หรือธุรกิจ</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-1">foot-1</div>
+        <div class="foot-2">foot-2</div>
+        <div class="foot-3">foot-3</div>
+    </footer>
+</body>
+</html>
